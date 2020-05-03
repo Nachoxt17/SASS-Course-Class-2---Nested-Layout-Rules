@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.title {
+  background-color: aqua; }
+
+/*+-One of the Many Improvements to SASS vs CSS is the Way in which the Sub-Element of an Element is Accessed in order to Stylize it. For example, if in CSS we want to change the Background Color of the 
+        Element <a> inside the Element <h3> of an Element <footer>, we would have to write this:_
+        
+        footer {
+            background-color: cyan;
+        }
+        footer h3{
+            color: blue;
+        }
+        footer h3 a{
+            color: green;
+        }
+        
+        +-But with sass it is much simpler; We just have to nest The Sub Element Inside the Brackets of its Parent Element, like this:_
+        
+        footer {
+            background-color: cyan;
+            h3{
+                color: blue;
+                a{
+                    color: green;
+                } 
+            }
+        }
+
+        And to apply and save the changes, we open the VS Code Terminal and enter this Code:_  sass --watch sass:css
+        And then Save.
+        */
+footer {
+  background-color: cyan; }
+  footer h3 {
+    color: blue; }
+    footer h3 a {
+      color: red; }
+
+/*# sourceMappingURL=styles.css.map */
